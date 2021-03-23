@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>F.Camp.2020</title>
+<!--navbar-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!--video full-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+	/*video*/
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg2 {
+  min-height: 50%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
+.bgimg2 {background-image: url("G:\Web2\sources\lichhoatdong.png")}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/*.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}*/
+
+#myBtn {
+  width: 100px;
+  font-size: 12px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*#myBtn:hover {
+  background: #ddd;
+  color: black;*/
+}
+/*readmoreles*/
+#more {display: none;}
+/*fulf*/
+img {
+  vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+</style>
+<body>
+<!--video full-->
+<video autoplay muted loop id="myVideo">
+  <source src="G:\Web2\sources\fcamp.mp4.crdownload" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">F Camp</h1>
+ 
+    <h2><b>08.11.2020</b></h2>
+  </div>
+</header>
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+         <a href="#home" style="width:23%; margin-top: 50px;" class="w3-bar-item w3-button" >Home</a>
+         <a href="#us" style="width:23%; margin-top: 50px;" class="w3-bar-item w3-button ">Event Schedule</a>
+         <a href="https://www.facebook.com/FCampFU/?ref=page_internal" target="_blank"><img src="G:\Web2\sources\Untitled-1.png" width="100" height="100" class="w3-bar-item w3-button" ></a>
+
+         <a href="#wedding" style="width:23%; margin-top: 50px;" class="w3-bar-item w3-button">FU LifeStyles</a>
+         <a href="#rsvp" style="width:23%; margin-top: 50px;" class="w3-bar-item w3-button w3-hover-black">Join now</a>
+    </div>
+</div>
+<!-- schedule -->
+<div class="w3-container w3-padding-64 w3-grayscale-min" id="us" style="background-color: white;">
+    <div class="w3-content">
+      <h1 class="w3-center w3-text-grey"><b>Event Schedule</b></h1>
+      <img class="w3-round w3-grayscale-min" src="G:\Web2\sources\123243560_1444039819118840_529593409131298789_o.jpg" style="width:100%;margin:32px 0">
+      <p>🔥 𝐅-𝐂𝐚𝐦𝐩 gặp bạn vào những tháng năm mà bạn rạng rỡ như một bông hoa hướng dương. Có người gọi đó là tuổi trẻ, có người gọi đó là giấc mơ, còn 𝐅-𝐂𝐚𝐦𝐩 gọi đó là thanh xuân. <span id="dots">...</span><span id="more">Thanh xuân đó chính là những quãng thời gian rực rỡ nhất, hồi ức tươi đẹp nhất của bạn và của 𝐅-𝐂𝐚𝐦𝐩.
+      🔥 Hãy cùng 𝐅-𝐂𝐚𝐦𝐩 bắt đầu thanh xuân đáng nhớ tại FU bằng LỄ TRƯỞNG THÀNH đánh dấu tuổi 18 của bạn nhé!
+      🔥 Nằm trong chuỗi sự kiện của 𝐅-𝐂𝐚𝐦𝐩 𝟐𝟎𝟐𝟎, LỄ TRƯỞNG THÀNH đã được cả 4 làng F, P, T ,U chuẩn bị vô cùng chu đáo, kỹ lưỡng suốt những ngày qua với mong muốn mang lại những gì tốt đẹp nhất dành cho các bạn tân sinh viên K16.
+      🔥 K16 - Chào mừng các bạn đã đến với 𝐅𝐏𝐓 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲.</span></p>
+
+<button onclick="myFunction()"  id="myBtn" type="button" class="btn btn-dark" >Read more</button>
+
+   <p class="w3-center"><a href="#wedding" class="w3-button w3-blue w3-round w3-padding-large w3-large">FU LifeStyles</a></p>
+    </div>
+</div>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } 
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>    
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1>Life is short, time is fast, no replay, no rewind, so enjoy every moment as it comes.</h1><br>
+
+  </div>
+</div> 
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-grayscale-min w3-center" id="wedding" style="background-color:#FF4500;">
+  <div class="w3-content">
+    <h1 class="w3-text-white"><b>Roll it Shake it. F-Camp let's take it</b></h1>
+    <br>
+    <div class="w3-row">
+      <div class="w3-half">
+       <img class="w3-round-large w3-grayscale-min" src="G:\Web2\sources\123504771_1446824435507045_7039514059066584177_o.jpg" style="width:100%;margin:64px 10;">
+      </div>
+      <div class="w3-half">
+       <img class="w3-round-large w3-grayscale-min" src="G:\Web2\sources\123942337_1447820285407460_4785266024250569602_o.jpg" style="width:100%;margin:64px 10;">
+      </div>
+      <div class="w3-half">
+       <img class="w3-round-large w3-grayscale-min" src="G:\Web2\sources\123961370_1447896898733132_4899470238634034704_o.jpg" style="width:100%;margin:64px 10;">
+      </div>
+      <div class="w3-half">
+       <img class="w3-round-large w3-grayscale-min" src="G:\Web2\sources\124802253_1449625885226900_1274660263543579154_o.jpg" style="width:100%;margin:64px 10;">
+      </div>
+    </div>
+    
+  </div>
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>F-Camp 2020  - 9:30am</p>
+        <p>Lunch - 12:00pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>30m road area Hoa Lac Campus</p>
+        <p>Vovinam Yard Hoa Lac Campus</p>
+      </div>
+    </div>
+  </div>
+</div>  
+</body>
+<body>
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-grayscale-min w3-center" id="rsvp" style="background-color:white;">
+  <div class="w3-content">
+    <h1>COME AND TAKE IT!</h1>
+    <p class="w3-large">Kindly Respond By 1st November, 2020</p>
+    <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Join now</button>
+   </p>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+        <div class="w3-container w3-white w3-center">
+         <h1 class="w3-wide">CAN YOU COME?</h1>
+         <p>Roll it Shake it, F-Camp let's take it.</p>
+          <form>
+           <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+           <input class="w3-input w3-border" type="text" placeholder="Student Code(s)" name="name">
+          </form>
+          <br>
+          <div class="w3-row">
+           <div class="w3-half">
+           <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+          </div>
+          <div class="w3-half">
+           <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+</body>
+<br>
+<!-- Footer -->
+<footer class="w3-center w3-green w3-padding-16">
+  <p>Contact
+   <a href="https://www.facebook.com/FCampFU/?ref=page_internal" title="W3.CSS" target="_blank" class="w3-hover-text-green">Fanpage</a>
+  </p>
+  <p>Email: fcamp.fptu.hn@gmail.com</p>
+  <p>Hotline: 037.707.8348</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</html>
+
+
